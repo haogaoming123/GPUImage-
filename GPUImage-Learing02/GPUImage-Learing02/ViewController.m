@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <GPUImage.h>
 
 @interface ViewController ()
 
@@ -14,11 +15,32 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    UIImage *inputImage = [UIImage imageNamed:@"60"];
+    //使用黑白素描滤镜
+    GPUImageSketchFilter *disFilter = [[GPUImageSketchFilter alloc] init];
+    
+    //设置渲染区域
+    [disFilter forceProcessingAtSize:inputImage.size];
+    [disFilter useNextFrameForImageCapture];
+    
+    //获取数据来源
+    GPUImagePicture *stillImageSource = [[GPUImagePicture alloc] initWithImage:inputImage];
+    
+    //添加上滤镜
+    [stillImageSource addTarget:disFilter];
+    //开始渲染
+    [stillImageSource processImage];
+    //获取渲染后的图片
+    UIImage *newImage = [disFilter imageFromCurrentFramebuffer];
+    //加载出来
+    UIImageView *imagview = [[UIImageView alloc] initWithImage:newImage];
+    imagview.frame = CGRectMake(100, 100, inputImage.size.width, inputImage.size.height);
+    [self.view addSubview:imagview];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

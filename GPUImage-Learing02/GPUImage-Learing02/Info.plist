@@ -4,6 +4,16 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>NSCameraUsageDescription</key>
+	<string>相机</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>MicPhone</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>相册1</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>xiang</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>相册2</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

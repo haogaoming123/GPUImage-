@@ -13,6 +13,7 @@
 		AE45DBC61F973F0100F04896 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE45DBC51F973F0100F04896 /* Assets.xcassets */; };
 		AE45DBC91F973F0100F04896 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE45DBC71F973F0100F04896 /* LaunchScreen.storyboard */; };
 		AE45DBCC1F973F0100F04896 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE45DBCB1F973F0100F04896 /* main.m */; };
+		AE45DBD31F97519300F04896 /* 60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE45DBD21F97519300F04896 /* 60@3x.png */; };
 		DAC7451A85FA653534ABBA80 /* libPods-GPUImage-Learing02.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD865C1048ECEE2EEAFD460 /* libPods-GPUImage-Learing02.a */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		AE45DBC81F973F0100F04896 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE45DBCA1F973F0100F04896 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE45DBCB1F973F0100F04896 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE45DBD21F97519300F04896 /* 60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		AE45DBB01F973F0100F04896 = {
 			isa = PBXGroup;
 			children = (
+				AE45DBD21F97519300F04896 /* 60@3x.png */,
 				AE45DBBB1F973F0100F04896 /* GPUImage-Learing02 */,
 				AE45DBBA1F973F0100F04896 /* Products */,
 				25D059D2D8A59ACE0737291D /* Pods */,
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE45DBC91F973F0100F04896 /* LaunchScreen.storyboard in Resources */,
+				AE45DBD31F97519300F04896 /* 60@3x.png in Resources */,
 				AE45DBC61F973F0100F04896 /* Assets.xcassets in Resources */,
 				AE45DBC41F973F0100F04896 /* Main.storyboard in Resources */,
 			);
@@ -354,13 +358,15 @@
 			baseConfigurationReference = 2ABE2F4D2E55FA58125B2931 /* Pods-GPUImage-Learing02.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: luo wenqiang (7SSPHJTWA3)";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = UFNG52WUQ7;
 				INFOPLIST_FILE = "GPUImage-Learing02/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.artron.GPUImage-Learing02";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "bf36172c-588f-4ce8-95c5-f9a007c667f3";
+				PROVISIONING_PROFILE_SPECIFIER = shenzhenInhouse_debug;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -370,13 +376,15 @@
 			baseConfigurationReference = 100CF317F77F40A71C9AF5F8 /* Pods-GPUImage-Learing02.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: luo wenqiang (7SSPHJTWA3)";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = UFNG52WUQ7;
 				INFOPLIST_FILE = "GPUImage-Learing02/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.artron.GPUImage-Learing02";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "bf36172c-588f-4ce8-95c5-f9a007c667f3";
+				PROVISIONING_PROFILE_SPECIFIER = shenzhenInhouse_debug;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

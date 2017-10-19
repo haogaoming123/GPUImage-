@@ -63,7 +63,8 @@
         UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         [self.navigationController pushViewController:[story instantiateViewControllerWithIdentifier:@"ViewControllerID"] animated:true];
     }else{
-        
+        UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        [self.navigationController pushViewController:[story instantiateViewControllerWithIdentifier:@"GPUImageBeautifyControllerID"] animated:true];
     }
 }
 

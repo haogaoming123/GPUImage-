@@ -14,6 +14,8 @@
 		AE0411E81F984AA500F81AAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0411E61F984AA500F81AAB /* LaunchScreen.storyboard */; };
 		AE0411EB1F984AA500F81AAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0411EA1F984AA500F81AAB /* main.m */; };
 		AE0411F31F987CCE00F81AAB /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0411F21F987CCE00F81AAB /* MainController.m */; };
+		AE0411F61F9894E000F81AAB /* GPUImageBeautifyController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0411F51F9894E000F81AAB /* GPUImageBeautifyController.m */; };
+		AE0411FA1F989D5800F81AAB /* GPUImageBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0411F91F989D5800F81AAB /* GPUImageBeautifyFilter.m */; };
 		C79BBC2329A72D86674D1446 /* libPods-GPUImage-Learing03.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 016B1DE2C48CB817C18189A6 /* libPods-GPUImage-Learing03.a */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,10 @@
 		AE0411EA1F984AA500F81AAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE0411F11F987CCE00F81AAB /* MainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
 		AE0411F21F987CCE00F81AAB /* MainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
+		AE0411F41F9894E000F81AAB /* GPUImageBeautifyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImageBeautifyController.h; sourceTree = "<group>"; };
+		AE0411F51F9894E000F81AAB /* GPUImageBeautifyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautifyController.m; sourceTree = "<group>"; };
+		AE0411F81F989D5800F81AAB /* GPUImageBeautifyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBeautifyFilter.h; sourceTree = "<group>"; };
+		AE0411F91F989D5800F81AAB /* GPUImageBeautifyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautifyFilter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +91,15 @@
 		AE0411DA1F984AA500F81AAB /* GPUImage-Learing03 */ = {
 			isa = PBXGroup;
 			children = (
+				AE0411F71F989D5800F81AAB /* GPUImageBeautifyFilter */,
 				AE0411DB1F984AA500F81AAB /* AppDelegate.h */,
 				AE0411DC1F984AA500F81AAB /* AppDelegate.m */,
 				AE0411F11F987CCE00F81AAB /* MainController.h */,
 				AE0411F21F987CCE00F81AAB /* MainController.m */,
 				AE0411DE1F984AA500F81AAB /* ViewController.h */,
 				AE0411DF1F984AA500F81AAB /* ViewController.m */,
+				AE0411F41F9894E000F81AAB /* GPUImageBeautifyController.h */,
+				AE0411F51F9894E000F81AAB /* GPUImageBeautifyController.m */,
 				AE0411E11F984AA500F81AAB /* Main.storyboard */,
 				AE0411E41F984AA500F81AAB /* Assets.xcassets */,
 				AE0411E61F984AA500F81AAB /* LaunchScreen.storyboard */,
@@ -98,6 +107,15 @@
 				AE0411EA1F984AA500F81AAB /* main.m */,
 			);
 			path = "GPUImage-Learing03";
+			sourceTree = "<group>";
+		};
+		AE0411F71F989D5800F81AAB /* GPUImageBeautifyFilter */ = {
+			isa = PBXGroup;
+			children = (
+				AE0411F81F989D5800F81AAB /* GPUImageBeautifyFilter.h */,
+				AE0411F91F989D5800F81AAB /* GPUImageBeautifyFilter.m */,
+			);
+			path = GPUImageBeautifyFilter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +242,8 @@
 			files = (
 				AE0411F31F987CCE00F81AAB /* MainController.m in Sources */,
 				AE0411E01F984AA500F81AAB /* ViewController.m in Sources */,
+				AE0411F61F9894E000F81AAB /* GPUImageBeautifyController.m in Sources */,
+				AE0411FA1F989D5800F81AAB /* GPUImageBeautifyFilter.m in Sources */,
 				AE0411EB1F984AA500F81AAB /* main.m in Sources */,
 				AE0411DD1F984AA500F81AAB /* AppDelegate.m in Sources */,
 			);

@@ -28,7 +28,11 @@
     UITableView *tableview = [[UITableView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(topLabel.frame), self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
     tableview.delegate = self;
     tableview.dataSource = self;
-    tableview.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    if (@available(iOS 11.0, *)) {
+        tableview.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    } else {
+        // Fallback on earlier versions
+    }
     [self.view addSubview:tableview];
 }
 

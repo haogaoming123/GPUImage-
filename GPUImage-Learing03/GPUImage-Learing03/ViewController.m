@@ -18,6 +18,12 @@
 
 @implementation ViewController
 
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self stopCamare:nil];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

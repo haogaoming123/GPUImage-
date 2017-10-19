@@ -21,8 +21,8 @@
     
     UIImage *inputImage = [UIImage imageNamed:@"60"];
     //使用黑白素描滤镜
-    GPUImageSketchFilter *disFilter = [[GPUImageSketchFilter alloc] init];
-    
+    GPUImageSmoothToonFilter *disFilter = [[GPUImageSmoothToonFilter alloc] init];
+    disFilter.blurRadiusInPixels = 0.5;
     //设置渲染区域
     [disFilter forceProcessingAtSize:inputImage.size];
     [disFilter useNextFrameForImageCapture];

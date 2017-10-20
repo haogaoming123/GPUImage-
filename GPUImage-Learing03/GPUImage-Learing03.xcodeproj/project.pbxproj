@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		AE0411DD1F984AA500F81AAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0411DC1F984AA500F81AAB /* AppDelegate.m */; };
-		AE0411E01F984AA500F81AAB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0411DF1F984AA500F81AAB /* ViewController.m */; };
 		AE0411E31F984AA500F81AAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0411E11F984AA500F81AAB /* Main.storyboard */; };
 		AE0411E51F984AA500F81AAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0411E41F984AA500F81AAB /* Assets.xcassets */; };
 		AE0411E81F984AA500F81AAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0411E61F984AA500F81AAB /* LaunchScreen.storyboard */; };
 		AE0411EB1F984AA500F81AAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0411EA1F984AA500F81AAB /* main.m */; };
 		AE0411F31F987CCE00F81AAB /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0411F21F987CCE00F81AAB /* MainController.m */; };
-		AE0411F61F9894E000F81AAB /* GPUImageBeautifyController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0411F51F9894E000F81AAB /* GPUImageBeautifyController.m */; };
 		AE0411FA1F989D5800F81AAB /* GPUImageBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0411F91F989D5800F81AAB /* GPUImageBeautifyFilter.m */; };
+		AE0412051F98A7E000F81AAB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0412011F98A7E000F81AAB /* ViewController.m */; };
+		AE0412061F98A7E000F81AAB /* GPUImageBeautifyController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0412041F98A7E000F81AAB /* GPUImageBeautifyController.m */; };
+		AE0412091F98A82A00F81AAB /* CameraSaveLibraryController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0412081F98A82A00F81AAB /* CameraSaveLibraryController.m */; };
 		C79BBC2329A72D86674D1446 /* libPods-GPUImage-Learing03.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 016B1DE2C48CB817C18189A6 /* libPods-GPUImage-Learing03.a */; };
 /* End PBXBuildFile section */
 
@@ -26,8 +27,6 @@
 		AE0411D81F984AA500F81AAB /* GPUImage-Learing03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPUImage-Learing03.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0411DB1F984AA500F81AAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE0411DC1F984AA500F81AAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AE0411DE1F984AA500F81AAB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AE0411DF1F984AA500F81AAB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AE0411E21F984AA500F81AAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE0411E41F984AA500F81AAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE0411E71F984AA500F81AAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,10 +34,14 @@
 		AE0411EA1F984AA500F81AAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE0411F11F987CCE00F81AAB /* MainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
 		AE0411F21F987CCE00F81AAB /* MainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
-		AE0411F41F9894E000F81AAB /* GPUImageBeautifyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImageBeautifyController.h; sourceTree = "<group>"; };
-		AE0411F51F9894E000F81AAB /* GPUImageBeautifyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautifyController.m; sourceTree = "<group>"; };
 		AE0411F81F989D5800F81AAB /* GPUImageBeautifyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBeautifyFilter.h; sourceTree = "<group>"; };
 		AE0411F91F989D5800F81AAB /* GPUImageBeautifyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautifyFilter.m; sourceTree = "<group>"; };
+		AE0412001F98A7E000F81AAB /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AE0412011F98A7E000F81AAB /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AE0412031F98A7E000F81AAB /* GPUImageBeautifyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBeautifyController.h; sourceTree = "<group>"; };
+		AE0412041F98A7E000F81AAB /* GPUImageBeautifyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautifyController.m; sourceTree = "<group>"; };
+		AE0412071F98A82A00F81AAB /* CameraSaveLibraryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraSaveLibraryController.h; sourceTree = "<group>"; };
+		AE0412081F98A82A00F81AAB /* CameraSaveLibraryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraSaveLibraryController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,15 +94,14 @@
 		AE0411DA1F984AA500F81AAB /* GPUImage-Learing03 */ = {
 			isa = PBXGroup;
 			children = (
+				AE0412021F98A7E000F81AAB /* 美颜滤镜 */,
+				AE0411FF1F98A7E000F81AAB /* GPUImage原生美颜 */,
+				AE0411FE1F98A79A00F81AAB /* 美颜滤镜视频保存相册 */,
 				AE0411F71F989D5800F81AAB /* GPUImageBeautifyFilter */,
 				AE0411DB1F984AA500F81AAB /* AppDelegate.h */,
 				AE0411DC1F984AA500F81AAB /* AppDelegate.m */,
 				AE0411F11F987CCE00F81AAB /* MainController.h */,
 				AE0411F21F987CCE00F81AAB /* MainController.m */,
-				AE0411DE1F984AA500F81AAB /* ViewController.h */,
-				AE0411DF1F984AA500F81AAB /* ViewController.m */,
-				AE0411F41F9894E000F81AAB /* GPUImageBeautifyController.h */,
-				AE0411F51F9894E000F81AAB /* GPUImageBeautifyController.m */,
 				AE0411E11F984AA500F81AAB /* Main.storyboard */,
 				AE0411E41F984AA500F81AAB /* Assets.xcassets */,
 				AE0411E61F984AA500F81AAB /* LaunchScreen.storyboard */,
@@ -116,6 +118,33 @@
 				AE0411F91F989D5800F81AAB /* GPUImageBeautifyFilter.m */,
 			);
 			path = GPUImageBeautifyFilter;
+			sourceTree = "<group>";
+		};
+		AE0411FE1F98A79A00F81AAB /* 美颜滤镜视频保存相册 */ = {
+			isa = PBXGroup;
+			children = (
+				AE0412071F98A82A00F81AAB /* CameraSaveLibraryController.h */,
+				AE0412081F98A82A00F81AAB /* CameraSaveLibraryController.m */,
+			);
+			path = "美颜滤镜视频保存相册";
+			sourceTree = "<group>";
+		};
+		AE0411FF1F98A7E000F81AAB /* GPUImage原生美颜 */ = {
+			isa = PBXGroup;
+			children = (
+				AE0412001F98A7E000F81AAB /* ViewController.h */,
+				AE0412011F98A7E000F81AAB /* ViewController.m */,
+			);
+			path = "GPUImage原生美颜";
+			sourceTree = "<group>";
+		};
+		AE0412021F98A7E000F81AAB /* 美颜滤镜 */ = {
+			isa = PBXGroup;
+			children = (
+				AE0412031F98A7E000F81AAB /* GPUImageBeautifyController.h */,
+				AE0412041F98A7E000F81AAB /* GPUImageBeautifyController.m */,
+			);
+			path = "美颜滤镜";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,11 +270,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE0411F31F987CCE00F81AAB /* MainController.m in Sources */,
-				AE0411E01F984AA500F81AAB /* ViewController.m in Sources */,
-				AE0411F61F9894E000F81AAB /* GPUImageBeautifyController.m in Sources */,
 				AE0411FA1F989D5800F81AAB /* GPUImageBeautifyFilter.m in Sources */,
 				AE0411EB1F984AA500F81AAB /* main.m in Sources */,
+				AE0412061F98A7E000F81AAB /* GPUImageBeautifyController.m in Sources */,
+				AE0412091F98A82A00F81AAB /* CameraSaveLibraryController.m in Sources */,
 				AE0411DD1F984AA500F81AAB /* AppDelegate.m in Sources */,
+				AE0412051F98A7E000F81AAB /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

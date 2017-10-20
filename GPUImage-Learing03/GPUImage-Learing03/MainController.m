@@ -13,12 +13,17 @@
 
 @interface MainController ()<UITableViewDelegate,UITableViewDataSource>
 
+@property (nonatomic,strong) NSMutableArray *mutArray;  //学习种类
 @end
 
 @implementation MainController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.mutArray = [NSMutableArray arrayWithObjects:@"GPUImage原生美颜",
+                                                     @"利用美颜滤镜实现",
+                                                     @"录制视频保存相册", nil];
     
     UILabel *topLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, statutBarH, self.view.frame.size.width, 44)];
     topLabel.text = @"视频美颜学习";
@@ -38,7 +43,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 2;
+    return self.mutArray.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -48,11 +53,7 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:str];
     }
-    if (indexPath.row == 0) {
-        cell.textLabel.text = @"GPUImage原生美颜";
-    }else{
-        cell.textLabel.text = @"利用美颜滤镜实现";
-    }
+    cell.textLabel.text = self.mutArray[indexPath.row];
     return cell;
 }
 
@@ -63,12 +64,13 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     if (indexPath.row == 0) {
-        UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         [self.navigationController pushViewController:[story instantiateViewControllerWithIdentifier:@"ViewControllerID"] animated:true];
-    }else{
-        UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    }else if (indexPath.row == 1) {
         [self.navigationController pushViewController:[story instantiateViewControllerWithIdentifier:@"GPUImageBeautifyControllerID"] animated:true];
+    }else if (indexPath.row == 2) {
+        [self.navigationController pushViewController:[story instantiateViewControllerWithIdentifier:@"CameraSaveLibraryControllerID"] animated:true];
     }
 }
 

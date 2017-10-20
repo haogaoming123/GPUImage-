@@ -38,6 +38,7 @@
     
     //创建视频源
     GPUImageVideoCamera *camera = [[GPUImageVideoCamera alloc] initWithSessionPreset:AVCaptureSessionPresetHigh cameraPosition:AVCaptureDevicePositionFront];
+    [camera addAudioInputsAndOutputs];  //解决视频录制的时候闪一下问题
     camera.outputImageOrientation = UIInterfaceOrientationPortrait;
     self.videoCamera = camera;
     

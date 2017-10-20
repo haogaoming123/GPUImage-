@@ -12,7 +12,7 @@
 
 @interface GPUImageBeautifyFilter : GPUImageFilterGroup {
     GPUImageBilateralFilter *bilateralFilter;
-    GPUImageCannyEdgeDetectionFilter *cannyEdgeFilter;
+    GPUImageSobelEdgeDetectionFilter *cannyEdgeFilter;
     GPUImageCombinationFilter *combinationFilter;
     GPUImageHSBFilter *hsbFilter;
 }

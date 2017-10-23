@@ -120,6 +120,15 @@
 }
 
 /**
+ 前后摄像头切换
+
+ @param sender 摄像头button
+ */
+- (IBAction)chengCamare:(UIButton *)sender {
+    [self.videoCamera rotateCamera];
+}
+
+/**
  视频存储本地相册
 
  @param movieURL 视频URL

@@ -10,4 +10,9 @@
 
 @interface DrawingImageController : UIViewController
 
+/**
+ 选择相册image
+ */
+@property (nonatomic,strong) UIImage *image;
+
 @end

@@ -8,17 +8,28 @@
 
 #import "DrawingImageController.h"
 
-@interface DrawingImageController ()
+@interface DrawingImageController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 @property (weak, nonatomic) IBOutlet UIImageView *imageview;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
-@property (weak, nonatomic) IBOutlet UICollectionViewCell *collectionCell;
-
 @end
 
 @implementation DrawingImageController
 
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = YES;
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBar.hidden = NO;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _collectionView.delegate = self;
+    [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
 }
 
 /**
@@ -27,6 +38,7 @@
  @param sender 返回
  */
 - (IBAction)backButtonClick:(UIButton *)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 /**
@@ -35,6 +47,16 @@
  @param sender 按钮
  */
 - (IBAction)nextButtonClick:(UIButton *)sender {
+    
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 11;
+}
+
+- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {

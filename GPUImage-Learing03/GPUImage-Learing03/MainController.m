@@ -7,7 +7,6 @@
 //
 
 #import "MainController.h"
-#import "ViewController.h"
 
 #define statutBarH  [UIApplication sharedApplication].statusBarFrame.size.height
 
@@ -23,7 +22,8 @@
     
     self.mutArray = [NSMutableArray arrayWithObjects:@"GPUImage原生美颜",
                                                      @"利用美颜滤镜实现",
-                                                     @"录制视频保存相册", nil];
+                                                     @"录制视频保存相册",
+                                                     @"照片滤镜",nil];
     
     UILabel *topLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, statutBarH, self.view.frame.size.width, 44)];
     topLabel.text = @"视频美颜学习";
@@ -72,6 +72,8 @@
         [self.navigationController pushViewController:[story instantiateViewControllerWithIdentifier:@"GPUImageBeautifyControllerID"] animated:true];
     }else if (indexPath.row == 2) {
         [self.navigationController pushViewController:[story instantiateViewControllerWithIdentifier:@"CameraSaveLibraryControllerID"] animated:true];
+    }else if (indexPath.row == 3) {
+        [self.navigationController pushViewController:[story instantiateViewControllerWithIdentifier:@"PhotoViewControllerID"] animated:true];
     }
 }
 

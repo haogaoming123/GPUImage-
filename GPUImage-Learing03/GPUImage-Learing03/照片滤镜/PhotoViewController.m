@@ -9,7 +9,7 @@
 #import "PhotoViewController.h"
 #import "DrawingImageController.h"
 
-#define ORIGINAL_MAX_WIDTH 400.0f
+#define ORIGINAL_MAX_WIDTH 1000.0f
 
 @interface PhotoViewController ()<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *imageview;    //选择后的照片
@@ -19,6 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(finshImageNotifiation:) name:@"finshImageNotifiation" object:nil];
 }
 
 /**
@@ -44,6 +46,20 @@
     [picker pushViewController:vc animated:true];
     //保存到系统相册
 //        UIImageWriteToSavedPhotosAlbum(portraitImg, nil, nil, nil);
+}
+
+- (void)finshImageNotifiation:(NSNotification *)notification
+{
+    UIImage *image = notification.object;
+    if (![image isKindOfClass:[UIImage class]]) {
+        return;
+    }
+    self.imageview.image = image;
+}
+
+-(void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)didReceiveMemoryWarning {

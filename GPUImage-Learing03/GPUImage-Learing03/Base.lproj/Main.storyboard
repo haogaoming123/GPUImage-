@@ -155,13 +155,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kQ5-eC-zkd">
-                                <rect key="frame" x="16" y="29" width="343" height="506"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kQ5-eC-zkd">
+                                <rect key="frame" x="16" y="30" width="343" height="495"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgV-QR-uSU">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgV-QR-uSU">
                                 <rect key="frame" x="149" y="575" width="77" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XW4-uT-hKa"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="选择相册">
                                     <color key="titleColor" red="1" green="0.13559447339735975" blue="0.6303890259595768" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -172,6 +173,15 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cgV-QR-uSU" firstAttribute="top" secondItem="kQ5-eC-zkd" secondAttribute="bottom" constant="50" id="AdD-p5-KYf"/>
+                            <constraint firstItem="kQ5-eC-zkd" firstAttribute="leading" secondItem="mbW-FO-mlR" secondAttribute="leading" constant="16" id="Tqs-xO-3vK"/>
+                            <constraint firstItem="cgV-QR-uSU" firstAttribute="leading" secondItem="mbW-FO-mlR" secondAttribute="leading" constant="149" id="cT0-q4-UkU"/>
+                            <constraint firstItem="mbW-FO-mlR" firstAttribute="trailing" secondItem="cgV-QR-uSU" secondAttribute="trailing" constant="149" id="d41-Pb-1Sh"/>
+                            <constraint firstItem="mbW-FO-mlR" firstAttribute="trailing" secondItem="kQ5-eC-zkd" secondAttribute="trailing" constant="16" id="gJc-yF-c0f"/>
+                            <constraint firstItem="kQ5-eC-zkd" firstAttribute="top" secondItem="mbW-FO-mlR" secondAttribute="top" constant="10" id="h6A-VD-Ywv"/>
+                            <constraint firstItem="mbW-FO-mlR" firstAttribute="bottom" secondItem="cgV-QR-uSU" secondAttribute="bottom" constant="42" id="oQM-NO-QzG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="mbW-FO-mlR"/>
                     </view>
                     <connections>
@@ -190,14 +200,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3N2-Aq-jmP">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3N2-Aq-jmP">
                                 <rect key="frame" x="0.0" y="567" width="375" height="100"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="WaB-Yz-905"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="SsR-0L-rM3"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="10" id="8He-Lx-9Im">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="8He-Lx-9Im">
                                     <size key="itemSize" width="97" height="125"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -214,7 +224,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ec6-5I-jaf">
-                                        <rect key="frame" x="10" y="30" width="46" height="33"/>
+                                        <rect key="frame" x="10" y="23" width="46" height="33"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="&lt;返回">
                                             <color key="titleColor" red="0.76983484455958551" green="0.33955340361519343" blue="0.72272208842828767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -224,7 +234,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hO1-ul-uxH">
-                                        <rect key="frame" x="313" y="30" width="52" height="33"/>
+                                        <rect key="frame" x="313" y="23" width="52" height="33"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="下一步">
                                             <color key="titleColor" red="0.76983484455958551" green="0.4203160848210496" blue="0.74332787527049693" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -234,12 +244,12 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.88405108629999996" green="0.97231217619999999" blue="0.24074461580000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="hO1-ul-uxH" firstAttribute="top" secondItem="Gg9-aj-Bdo" secondAttribute="top" constant="30" id="9Il-IR-wsw"/>
+                                    <constraint firstItem="hO1-ul-uxH" firstAttribute="top" secondItem="Gg9-aj-Bdo" secondAttribute="top" constant="23" id="9Il-IR-wsw"/>
                                     <constraint firstItem="ec6-5I-jaf" firstAttribute="leading" secondItem="Gg9-aj-Bdo" secondAttribute="leading" constant="10" id="WNe-nx-cuk"/>
                                     <constraint firstAttribute="trailing" secondItem="hO1-ul-uxH" secondAttribute="trailing" constant="10" id="ast-n8-EwG"/>
-                                    <constraint firstItem="ec6-5I-jaf" firstAttribute="top" secondItem="Gg9-aj-Bdo" secondAttribute="top" constant="30" id="bZ5-VX-cXK"/>
+                                    <constraint firstItem="ec6-5I-jaf" firstAttribute="top" secondItem="Gg9-aj-Bdo" secondAttribute="top" constant="23" id="bZ5-VX-cXK"/>
                                     <constraint firstItem="hO1-ul-uxH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Gg9-aj-Bdo" secondAttribute="leading" constant="20" symbolic="YES" id="bm0-Kh-aS5"/>
                                     <constraint firstAttribute="height" constant="64" id="j5n-CY-oBJ"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ec6-5I-jaf" secondAttribute="trailing" constant="20" symbolic="YES" id="qQH-p0-8Mg"/>

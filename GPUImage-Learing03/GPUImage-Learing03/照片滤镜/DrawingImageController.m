@@ -11,6 +11,7 @@
 @interface DrawingImageController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 @property (weak, nonatomic) IBOutlet UIImageView *imageview;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
 @end
 
 @implementation DrawingImageController
@@ -29,6 +30,7 @@
     [super viewDidLoad];
     
     _collectionView.delegate = self;
+    _collectionView.dataSource = self;
     [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
 }
 
@@ -56,6 +58,7 @@
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor redColor];
     return cell;
 }
 

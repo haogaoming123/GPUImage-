@@ -17,6 +17,8 @@
 		AE0412051F98A7E000F81AAB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0412011F98A7E000F81AAB /* ViewController.m */; };
 		AE0412061F98A7E000F81AAB /* GPUImageBeautifyController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0412041F98A7E000F81AAB /* GPUImageBeautifyController.m */; };
 		AE0412091F98A82A00F81AAB /* CameraSaveLibraryController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0412081F98A82A00F81AAB /* CameraSaveLibraryController.m */; };
+		AE38077C1FA036CB0078182D /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE38077B1FA036CB0078182D /* PhotoViewController.m */; };
+		AE38077F1FA040060078182D /* DrawingImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE38077E1FA040060078182D /* DrawingImageController.m */; };
 		C79BBC2329A72D86674D1446 /* libPods-GPUImage-Learing03.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 016B1DE2C48CB817C18189A6 /* libPods-GPUImage-Learing03.a */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,10 @@
 		AE0412041F98A7E000F81AAB /* GPUImageBeautifyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautifyController.m; sourceTree = "<group>"; };
 		AE0412071F98A82A00F81AAB /* CameraSaveLibraryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraSaveLibraryController.h; sourceTree = "<group>"; };
 		AE0412081F98A82A00F81AAB /* CameraSaveLibraryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraSaveLibraryController.m; sourceTree = "<group>"; };
+		AE38077A1FA036CB0078182D /* PhotoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		AE38077B1FA036CB0078182D /* PhotoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		AE38077D1FA040060078182D /* DrawingImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawingImageController.h; sourceTree = "<group>"; };
+		AE38077E1FA040060078182D /* DrawingImageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawingImageController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 		AE0411DA1F984AA500F81AAB /* GPUImage-Learing03 */ = {
 			isa = PBXGroup;
 			children = (
+				AE3807791FA036360078182D /* 照片滤镜 */,
 				AE0412021F98A7E000F81AAB /* 美颜滤镜 */,
 				AE0411FF1F98A7E000F81AAB /* GPUImage原生美颜 */,
 				AE0411FE1F98A79A00F81AAB /* 美颜滤镜视频保存相册 */,
@@ -145,6 +152,17 @@
 				AE0412041F98A7E000F81AAB /* GPUImageBeautifyController.m */,
 			);
 			path = "美颜滤镜";
+			sourceTree = "<group>";
+		};
+		AE3807791FA036360078182D /* 照片滤镜 */ = {
+			isa = PBXGroup;
+			children = (
+				AE38077A1FA036CB0078182D /* PhotoViewController.h */,
+				AE38077B1FA036CB0078182D /* PhotoViewController.m */,
+				AE38077D1FA040060078182D /* DrawingImageController.h */,
+				AE38077E1FA040060078182D /* DrawingImageController.m */,
+			);
+			path = "照片滤镜";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +288,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE0411F31F987CCE00F81AAB /* MainController.m in Sources */,
+				AE38077F1FA040060078182D /* DrawingImageController.m in Sources */,
+				AE38077C1FA036CB0078182D /* PhotoViewController.m in Sources */,
 				AE0411FA1F989D5800F81AAB /* GPUImageBeautifyFilter.m in Sources */,
 				AE0411EB1F984AA500F81AAB /* main.m in Sources */,
 				AE0412061F98A7E000F81AAB /* GPUImageBeautifyController.m in Sources */,
